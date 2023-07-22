@@ -20,9 +20,9 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Static Code Linting with flake8
         run: |
-          ./script/lint.sh
+          ./scripts/lint.sh
       - name: Unit Testing with pytest
         # env:
           # add environment variables for tests
         run: |
-          ./script/test.sh
+          ./scripts/test.sh
